@@ -21,7 +21,7 @@ const Header2 = () => (
     <header>
       <a href="index.html" className="header-logo-link">
         <div className="header-logo">
-          <img src="FOTITOS/logo.png" alt="GameVerse Logo" className="logo" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/imagenes-del-final.appspot.com/o/IMAGENES%20PRINCIPALES%2Flogo.png?alt=media&token=1e2f5cd6-aedd-4a61-82bc-24a37d01ecc9" alt="GameVerse Logo" className="logo" />
           <h1>GameVerse</h1>
         </div>
       </a>
