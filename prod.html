@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/CSS/prod.css" />
+    <link rel="stylesheet" href="/CSS/style2.css" />
     <link rel="stylesheet" href="/CSS/style1.css" />
     <title>GameVerse - Tu mundo de juegos</title>
     <script
@@ -23,27 +23,22 @@
     <div id="root"></div>
     <script type="text/babel" src="js/prod.js"></script>
     <script type="text/babel" src="js/scripts.js"></script>
+    <script type="text/babel" src="js/popup.js"></script>
     <script type="text/babel">
       const App = () => (
         <div>
           <Header2 />
           <section id="game-list">
-            <Prod />
-            <Prod />
-            <Prod />
-            <Prod />
-            <Prod />
-            <Prod />
-            <Prod />
-            <Prod />
-            <Prod />
-            <Prod />
-            <Prod />
-            <Prod />
-            <Prod />
-            <Prod />
-            <Prod />
-            <Prod />
+            {gamesData.map((game) => (
+              <Prod
+                key={game.id}
+                category={game.category}
+                title={game.title}
+                description={game.description}
+                image={game.image}
+                id={game.id}
+              />
+            ))}
           </section>
           <Footer />
         </div>

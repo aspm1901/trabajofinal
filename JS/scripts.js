@@ -2,16 +2,18 @@ document.addEventListener("DOMContentLoaded", function () {});
 
 const Header = () => (
   <header>
-    <div class="header-logo">
-      <img src="FOTITOS/logo.png" alt="GameVerse Logo" class="logo" />
-      <h1>GameVerse</h1>
-    </div>
+    <a href="index.html" className="header-logo-link">
+      <div className="header-logo">
+        <img src="FOTITOS/logo.png" alt="GameVerse Logo" className="logo" />
+        <h1>GameVerse</h1>
+      </div>
+    </a>
     <nav>
-      <div class="nav-buttons">
-        <button onclick="window.location.href='gameList.html'">
+      <div className="nav-buttons">
+        <button onClick={() => (window.location.href = "acercade.html")}>
           Acerca de nosotros
         </button>
-        <button onclick="window.location.href='contact.html'">
+        <button onClick={() => (window.location.href = "prod.html")}>
           Nuestros productos
         </button>
       </div>
@@ -31,7 +33,7 @@ const MainContent = () => (
         className="imagenprincipal"
       />
       <h2>
-        <a href="#" style={{ color: "#9f5ea0" }}>
+        <a href="acercade.html" style={{ color: "#9f5ea0" }}>
           Acerca de nosotros
         </a>
       </h2>
@@ -45,11 +47,13 @@ const MainContent = () => (
       <h2 style={{ color: "#9f5ea0" }}>Productos destacados</h2>
       <div className="product-card">
         <img src="FOTITOS/ps5.png" className="Ps5s" alt="PlayStation 5" />
-        <p>PlayStation 5</p>
+        <p className="textito">PlayStation 5</p>
       </div>
       <div className="product-card">
         <img src="FOTITOS/xbox.png" className="Xboxs" alt="Xbox Series X" />
-        <p>Xbox Series X</p>
+        <p className="textito" textito>
+          Xbox Series X
+        </p>
       </div>
       <div className="product-card">
         <img
@@ -57,7 +61,7 @@ const MainContent = () => (
           className="Nintendos"
           alt="Nintendo Switch OLED"
         />
-        <p>Nintendo Switch OLED</p>
+        <p className="textito">Nintendo Switch OLED</p>
       </div>
     </section>
     <div className="todos-productos">
@@ -77,4 +81,53 @@ const Footer = () => (
     <p>Número de contacto: +51 960 172 519</p>
     <small>2024 Fundamentos de diseño web - All Rights Reserved</small>
   </footer>
+);
+
+const Form = () => (
+  <div class="contact-container">
+    <div class="image-section">
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/imagenes-del-final.appspot.com/o/IMAGENES%20CONTACTO%2Fimagencuadro.png?alt=media&token=f46c1991-b7c9-4ac0-a29f-b20b9819e25d"
+        alt="mandos"
+      />
+    </div>
+    <div class="form-section">
+      <h2>Contáctanos</h2>
+      <form className="p-6 bg-white shadow-md rounded-lg space-y-4">
+        <input
+          type="text"
+          name="name"
+          placeholder="Nombres y apellidos"
+          required
+          className="w-full p-2 border border-gray-300 rounded"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Correo electrónico"
+          required
+          className="w-full p-2 border border-gray-300 rounded"
+        />
+        <input
+          type="tel"
+          placeholder="Número telefónico"
+          required
+          className="w-full p-2 border border-gray-300 rounded"
+        />
+        <textarea
+          name="message"
+          placeholder="Mensaje"
+          required
+          className="w-full p-2 border border-gray-300 rounded"
+        ></textarea>
+        <button
+          type="submit"
+          className="w-full p-2 border border-gray-300 rounded"
+        >
+          {" "}
+          Enviar{" "}
+        </button>
+      </form>
+    </div>
+  </div>
 );
