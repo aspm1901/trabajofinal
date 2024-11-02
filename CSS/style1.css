@@ -22,7 +22,7 @@ html {
   flex-direction: column;
   font-family: var(--font-family);
   background-color: var(--background-color);
-  background: url("../FOTITOS/patronfondo.png") center/cover no-repeat fixed;
+  background: url(" https://firebasestorage.googleapis.com/v0/b/imagenes-del-final.appspot.com/o/IMAGENES%20PRINCIPALES%2Fpatron.png?alt=media&token=ec9610ba-042c-4baf-bed1-bac8f9a8b277") center/cover no-repeat fixed;
   backdrop-filter: blur(10px);
 }
 

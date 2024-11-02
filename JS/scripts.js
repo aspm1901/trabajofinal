@@ -28,7 +28,7 @@ const MainContent = () => (
     </h2>
     <section id="main">
       <img
-        src="FOTITOS/imagenprincipal.jpg"
+        src="https://firebasestorage.googleapis.com/v0/b/imagenes-del-final.appspot.com/o/IMAGENES%20PRINCIPALES%2Fimagenprincipal.jpg?alt=media&token=5d3ae7ef-16b8-4bde-a624-b616233eafb5"
         alt="Imagen principal"
         className="imagenprincipal"
       />
@@ -46,18 +46,26 @@ const MainContent = () => (
     <section id="products">
       <h2 style={{ color: "#9f5ea0" }}>Productos destacados</h2>
       <div className="product-card">
-        <img src="FOTITOS/ps5.png" className="Ps5s" alt="PlayStation 5" />
+        <img
+          src=" https://firebasestorage.googleapis.com/v0/b/imagenes-del-final.appspot.com/o/IMAGENES%20PRINCIPALES%2FPS5.jpeg?alt=media&token=248092d2-c5bd-48a2-a56f-275f1285b0a7"
+          className="Ps5s"
+          alt="PlayStation 5"
+        />
         <p className="textito">PlayStation 5</p>
       </div>
       <div className="product-card">
-        <img src="FOTITOS/xbox.png" className="Xboxs" alt="Xbox Series X" />
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/imagenes-del-final.appspot.com/o/IMAGENES%20PRINCIPALES%2Fxbox.png?alt=media&token=be2e135f-679b-4374-b5b0-9c422cea0b96"
+          className="Xboxs"
+          alt="Xbox Series X"
+        />
         <p className="textito" textito>
           Xbox Series X
         </p>
       </div>
       <div className="product-card">
         <img
-          src="FOTITOS/switch.png"
+          src="https://firebasestorage.googleapis.com/v0/b/imagenes-del-final.appspot.com/o/IMAGENES%20PRINCIPALES%2Fswitch.png?alt=media&token=4842f586-62ea-419a-959e-4d14b3df7b31"
           className="Nintendos"
           alt="Nintendo Switch OLED"
         />
