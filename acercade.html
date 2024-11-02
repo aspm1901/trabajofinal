@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="CSS/style3.css" />
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>GameVerse - Tu mundo de juegos</title>
     <script
       crossorigin
@@ -19,24 +19,24 @@
       src="https://unpkg.com/@babel/standalone/babel.min.js"
     ></script>
   </head>
-  <body>
-    <div id="root"></div>
+  <body class="min-h-screen flex flex-col">
+    <div id="root" class="flex-grow"></div>
     <script type="text/babel" src="JS/scripts.js"></script>
     <script type="text/babel">
       const App = () => (
-        <div>
+        <div className="flex flex-col min-h-screen">
           <Header />
           <div class="background">
             <div class="description-container">
               <h1 class="welcome-title">
-                Bienvenidos a <span class="highlight">Gaming Universe</span>
+                Bienvenidos a <span class="highlight">GameVerse</span>
               </h1>
               <h2>Todo Relacionado con el Gaming</h2>
               <p>
                 Saludos a todos los entusiastas del gaming. Desde videojuegos
                 clásicos hasta las últimas innovaciones en consolas y
-                componentes, Gaming Universe se ha convertido en un referente
-                para todos los amantes de esta apasionante industria. Nuestro
+                componentes, GameVerse se ha convertido en un referente para
+                todos los amantes de esta apasionante industria. Nuestro
                 objetivo es ofrecer productos de alta calidad que eleven tu
                 experiencia de juego y conecten con tu pasión por el
                 entretenimiento.
@@ -44,7 +44,7 @@
 
               <h2>Explora Nuestro Universo</h2>
               <p>
-                Gaming Universe es el destino ideal para encontrar todo lo que
+                GameVerse es el destino ideal para encontrar todo lo que
                 necesitas para mejorar y personalizar tu espacio gamer. Desde
                 consolas y videojuegos hasta accesorios de última generación y
                 componentes de PC de alto rendimiento, cada producto ha sido
@@ -57,7 +57,7 @@
                 Realizamos envíos rápidos y gratuitos a nivel global y aceptamos
                 los métodos de pago más seguros, incluyendo PayPal y tarjetas de
                 crédito/débito como Visa, Mastercard y American Express.
-                ¡Sumérgete en el mundo del gaming con Gaming Universe y lleva tu
+                ¡Sumérgete en el mundo del gaming con GameVerse y lleva tu
                 experiencia de juego al siguiente nivel!
               </p>
             </div>
@@ -74,7 +74,6 @@
                 title="Ubicación de Gaming Universe"
               ></iframe>
             </div>
-            
           </section>
           <Footer />
         </div>

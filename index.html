@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="CSS/style3.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>GameVerse - Tu mundo de juegos</title>
     <script
       crossorigin
@@ -18,12 +19,12 @@
       src="https://unpkg.com/@babel/standalone/babel.min.js"
     ></script>
   </head>
-  <body>
-    <div id="root"></div>
+  <body class="min-h-screen flex flex-col">
+    <div id="root" class="flex-grow"></div>
     <script type="text/babel" src="JS/scripts.js"></script>
     <script type="text/babel">
       const App = () => (
-        <div>
+        <div className="flex flex-col min-h-screen">
           <Header />
           <MainContent />
           <Footer />
