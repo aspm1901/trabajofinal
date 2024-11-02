@@ -279,7 +279,7 @@ header {
 }
 
 .buy-button {
-  background-color: #66b3ff; /* Celeste */
+  background-color: #66b3ff;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -289,10 +289,9 @@ header {
 }
 
 .buy-button:hover {
-  background-color: #a95fb0; /* Morado */
+  background-color: #a95fb0;
 }
 
-/* Estilos para el modal */
 .modal {
   position: fixed;
   top: 0;
@@ -321,10 +320,10 @@ header {
 
 .modal-image {
   width: 100%;
-  max-width: 300px; /* Limitar el tamaño de la imagen */
+  max-width: 300px;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+  margin-bottom: 15px;
 }
 
 .close {
@@ -347,7 +346,6 @@ header {
   margin: 10px 0;
 }
 
-/* Estilos para el modal */
 .modal {
   position: fixed;
   top: 0;
@@ -359,7 +357,7 @@ header {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  overflow: hidden; /* Asegura que no haya scroll en el modal */
+  overflow: hidden;
 }
 
 .modal-content {
@@ -378,10 +376,10 @@ header {
 
 .modal-image {
   width: 100%;
-  max-width: 300px; /* Limitar el tamaño de la imagen */
+  max-width: 300px;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+  margin-bottom: 15px;
 }
 
 .close {
@@ -479,7 +477,7 @@ nav button,
   cursor: pointer;
   transition: background-color var(--transition), box-shadow var(--transition);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 10px; /* Añadir margen para separar los botones */
+  margin: 10px;
 }
 
 nav button:hover,
@@ -494,7 +492,7 @@ nav button:hover,
   background-color: #333;
   border-radius: 25px;
   padding: 15px;
-  margin-right: 20px; /* Añadir margen derecho para separar del logo */
+  margin-right: 20px;
 }
 
 .logo {
@@ -513,7 +511,7 @@ nav button:hover,
   .header-logo {
     flex-direction: column;
     padding: 10px;
-    margin-right: 0; /* Eliminar margen derecho en pantallas pequeñas */
+    margin-right: 0;
   }
 
   .logo {

@@ -4,7 +4,11 @@ const Header = () => (
   <header>
     <a href="index.html" className="header-logo-link">
       <div className="header-logo">
-        <img src="https://firebasestorage.googleapis.com/v0/b/imagenes-del-final.appspot.com/o/IMAGENES%20PRINCIPALES%2Flogo.png?alt=media&token=1e2f5cd6-aedd-4a61-82bc-24a37d01ecc9" alt="GameVerse Logo" className="logo" />
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/imagenes-del-final.appspot.com/o/IMAGENES%20PRINCIPALES%2Flogo.png?alt=media&token=1e2f5cd6-aedd-4a61-82bc-24a37d01ecc9"
+          alt="GameVerse Logo"
+          className="logo"
+        />
         <h1>GameVerse</h1>
       </div>
     </a>
@@ -73,7 +77,7 @@ const MainContent = () => (
       </div>
     </section>
     <div className="todos-productos">
-      <a href="#">Ver todos nuestros productos</a>
+      <a href="prod.html">Ver todos nuestros productos</a>
     </div>
   </div>
 );
